@@ -5,7 +5,6 @@ import CommonSelect from "../Common/CommonSelect";
 
 
 // constans 
-
 const multiSelectOptions = [{ "title": "React", "id": "react" }, {
   "title":
     "Angular", "id": "angular"
@@ -35,7 +34,6 @@ const Home = () => {
           <input
             type="checkbox"
             checked={props.isSelected}
-            onChange={() => null}
           />{" "}
           <label>{props.label}</label>
         </components.Option>
@@ -66,7 +64,6 @@ const Home = () => {
           hideMenu={false}
         />
       </div>
-
       <button className={`btn btn-primary ${(multiSelected.length === multiSelectOptions.length && singleSelected) ? "d-block" : "d-none"}`} onClick={reset}>Clear</button>
     </div>
   );
